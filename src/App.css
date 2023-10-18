@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font: 14px/20px "Lato", Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.watches {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clock {
+  padding-top: 2rem;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete {
+  width: auto;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: rgb(20, 4, 56);
+  color: #fff;
+  cursor: pointer;
+  margin: 3px 0;
+}
+
+.hero-circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  border: 4px solid rgb(20, 4, 56);
+  border-radius: 50%;
+  box-shadow: 0 1px 8px rgb(34 34 34 / 30%), inset 0 1px 8px rgb(34 34 34 / 30%);
+
+  background-image: url("./bg.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.hero-face {
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  box-shadow: 0 1px 8px rgb(34 34 34 / 30%), 0 1px 8px rgb(34 34 34 / 30%);
+}
+
+.hour {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  margin: -3px;
+  padding: 6px 25% 0 0;
+  background: #fff;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  border-radius: 4px 0 0 4px;
+}
+
+.minute {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin: 0 -2px 0;
+  padding: 40% 2px 0;
+  background: #fff;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+.second {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 -1px;
+  padding: 40% 1px 0;
+  background: #fff;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: -10px;
+}
